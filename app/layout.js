@@ -16,9 +16,28 @@ export default function RootLayout({ children }) {
         className={`${inter.className} p-5 text-dark-grayish-blue max-w-screen-xl mx-auto`}
       >
         <Header />
-        <main className="grid gap-y-10 md:gap-x-5 grid-cols-1 md:grid-cols-3">
+        <main className="grid gap-y-14 md:gap-x-5 grid-cols-1 md:grid-cols-3">
           {children}
         </main>
+
+        <footer className="bg-gray-300 mt-20">
+          Challenge by{" "}
+          <a
+            href="https://www.frontendmentor.io"
+            target="_blank"
+            className="hover:underline"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a
+            href="https://github.com/piatrashkakanstantinass"
+            className="hover:underline"
+          >
+            Kanstantinas Piatrashka
+          </a>
+          .
+        </footer>
       </body>
     </html>
   );
